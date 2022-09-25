@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,14 +11,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
 
     <header class="header">
-        <div class="container">
-            <nav>
+        <div class="container header-container">
+            <nav class="header-nav">
                 <a class="logo link" href="" lang="en">Web<span class="logo-header-studio">Studio</span></a>
                 <ul class="header-list list">
                     <li class="header-item">
@@ -31,23 +34,28 @@
                     </li>
                 </ul>
             </nav>
-            <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            <div class="header-contacts">
+                <a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
         </div>
     </header>
 
     <main>
         <section class="portfolio">
-            <div class="container">
+            
                 <h1 class="visually-hidden">h1</h1>
                 <h2 class="visually-hidden">h2</h2>
-                <ul class="portfolio-list-btn list">
-                    <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Усі</button></li>
-                    <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Веб-сайти</button></li>
-                    <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Додатки</button></li>
-                    <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Дизайн</button></li>
-                    <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Меркетинг</button></li>
-                </ul>
+                <div class="container">
+                    <ul class="portfolio-list-btn list">
+                        <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Усі</button></li>
+                        <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Веб-сайти</button></li>
+                        <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Додатки</button></li>
+                        <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Дизайн</button></li>
+                        <li class="portfolio-item-btn"><button class="portfolio-btn" type="button">Меркетинг</button></li>
+                    </ul>
+                </div>
+            <div class="container">
                 <ul class="portfolio-list list">
                    <li class="portfolio-item">
                     <img class="portfolio-img" src="./images/img-portf-1.jpg" alt="Технокряк" width="370" height="294">

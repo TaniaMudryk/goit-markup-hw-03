@@ -38,6 +38,12 @@ ol {
   padding-left: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -46,11 +52,15 @@ ol {
   outline: 1px solid red;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  :94px ;
+}
+
 /*-----------HEADER----------*/
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .header-container {
@@ -64,9 +74,9 @@ ol {
 }
 
 .logo {
-  margin-top: 24px;
-  margin-right: 93px;
-  margin-bottom: 25px;
+  padding-top: 24px;
+  padding-right: 93px;
+  padding-bottom: 25px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -88,7 +98,6 @@ ol {
 
 .header-contacts {
   margin-left: auto;
-  
 }
 
 .header-mail {
@@ -137,13 +146,12 @@ ol {
 /*-----------HERO----------*/
 
 .hero {
+  
   background: #2f303a;
 }
 
 .hero-title {
-  padding: 100px;
-
-  font-weight: 900;
+   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
@@ -171,11 +179,8 @@ ol {
 .service {
 }
 
-
-
-
 .service-list {
-  padding-top: 94px;
+  padding-bottom: 94px;
   display: flex;
   gap: 30px;
 }
@@ -193,7 +198,7 @@ ol {
   color: var(--color-titles);
 }
 
-.service-title-text {  
+.service-title-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -201,8 +206,8 @@ ol {
 
 .service-title,
 .team-title {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  /* padding-top: 94px; */
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -212,7 +217,6 @@ ol {
 }
 
 .service-list-image {
-  /* padding-bottom: 94px; */
   display: flex;
   gap: 30px;
 }
@@ -228,12 +232,12 @@ ol {
   gap: 30px;
 }
 
-
-
 .team-item {
 }
 
 .team-title-name {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
@@ -243,6 +247,7 @@ ol {
 }
 
 .team-profession {
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -252,7 +257,12 @@ ol {
 /*-----------FOOTER----------*/
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #2f303a;
+}
+
+.logo-footer {
 }
 
 .logo-footer-studio {
@@ -260,6 +270,7 @@ ol {
 }
 
 .footer-address {
+  margin-top: 20px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -268,6 +279,8 @@ ol {
 }
 
 .footer-contacts {
+  margin-top: 9px;
+  display: block;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -277,10 +290,14 @@ ol {
 /*-----------PORTFOLIO----------*/
 
 .portfolio {
-  background: #f5f5f5;
 }
 
 .portfolio-list-btn {
+  margin-top: 100px;
+  margin-bottom: 56px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .portfolio-item-btn {
@@ -291,16 +308,36 @@ ol {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--color-titles);
-  cursor: pointer;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
   color: var(--color-accent);
+}
+
+/* .portfolio-list {
+  border: 1px solid #EEEEEE;
+} */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  /* column-gap: 30px;
+  row-gap: 30px; */
+}
+.portfolio-list:nth-child(3n + 3) {
+  margin-right: 0;
 }
 
 .portfolio-title {
